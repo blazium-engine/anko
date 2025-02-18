@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/env"
 )
 
 func TestReturns(t *testing.T) {

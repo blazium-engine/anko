@@ -3,8 +3,8 @@ package vm
 import (
 	"reflect"
 
-	"github.com/mattn/anko/ast"
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/ast"
+	"github.com/blazium-engine/anko/env"
 )
 
 // invokeExpr evaluates one expression.

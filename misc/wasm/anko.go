@@ -1,3 +1,4 @@
+//go:build js && wasm
 // +build js,wasm
 
 package main
@@ -8,10 +9,10 @@ import (
 	"strings"
 	"syscall/js"
 
-	"github.com/mattn/anko/core"
-	"github.com/mattn/anko/packages"
-	"github.com/mattn/anko/parser"
-	"github.com/mattn/anko/vm"
+	"github.com/blazium-engine/anko/core"
+	"github.com/blazium-engine/anko/packages"
+	"github.com/blazium-engine/anko/parser"
+	"github.com/blazium-engine/anko/vm"
 )
 
 var (

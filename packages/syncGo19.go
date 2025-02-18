@@ -1,3 +1,4 @@
+//go:build go1.9
 // +build go1.9
 
 package packages
@@ -6,7 +7,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/env"
 )
 
 func syncGo19() {

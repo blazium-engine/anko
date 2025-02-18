@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/mattn/anko/ast"
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/ast"
+	"github.com/blazium-engine/anko/env"
 )
 
 // Options provides options to run VM with

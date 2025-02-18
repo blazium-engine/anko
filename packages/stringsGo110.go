@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 package packages
@@ -6,7 +7,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/env"
 )
 
 func stringsGo110() {
