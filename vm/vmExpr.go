@@ -3,8 +3,8 @@ package vm
 import (
 	"reflect"
 
-	"github.com/mattn/anko/ast"
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/ast"
+	"github.com/blazium-engine/anko/env"
 )
 
 // invokeExpr evaluates one expression.
@@ -522,8 +522,8 @@ func (runInfo *runInfoStruct) invokeExpr() {
 		name := runInfo.rv.String()
 		runInfo.rv = nilValue
 
-		methods, ok := env.Packages[name]
-		if !ok {
+		methods := runInfo.env.Package(name)
+		if methods == nil {
 			runInfo.err = newStringError(expr, "package not found: "+name)
 			return
 		}
@@ -537,8 +537,8 @@ func (runInfo *runInfoStruct) invokeExpr() {
 			}
 		}
 
-		types, ok := env.PackageTypes[name]
-		if ok {
+		types := runInfo.env.PackageTypes(name)
+		if types != nil {
 			for typeName, typeValue := range types {
 				err = pack.DefineReflectType(typeName, typeValue)
 				if err != nil {

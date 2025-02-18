@@ -7,8 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mattn/anko/packages"
-	"github.com/mattn/anko/vm"
+	"github.com/blazium-engine/anko/internal/testlib"
+	"github.com/blazium-engine/anko/packages"
+	"github.com/blazium-engine/anko/vm"
 )
 
 var testCoreEnvSetupFunc = func(t *testing.T, env corelib.Env) { Import(env.(*vm.Env)) }

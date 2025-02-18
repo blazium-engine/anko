@@ -3,13 +3,13 @@ package vm_test
 import (
 	"log"
 
-	"github.com/mattn/anko/env"
-	_ "github.com/mattn/anko/packages"
-	"github.com/mattn/anko/vm"
+	"github.com/blazium-engine/anko/env"
+	_ "github.com/blazium-engine/anko/packages"
+	"github.com/blazium-engine/anko/vm"
 )
 
 func Example_vmSort() {
-	// _ "github.com/mattn/anko/packages"
+	// _ "github.com/blazium-engine/anko/packages"
 
 	e := env.NewEnv()
 
@@ -35,7 +35,7 @@ fmt.Println(a)
 }
 
 func Example_vmRegexp() {
-	// _ "github.com/mattn/anko/packages"
+	// _ "github.com/blazium-engine/anko/packages"
 
 	e := env.NewEnv()
 
@@ -79,7 +79,7 @@ fmt.Println(result)
 }
 
 func Example_vmHttp() {
-	// _ "github.com/mattn/anko/packages"
+	// _ "github.com/blazium-engine/anko/packages"
 
 	e := env.NewEnv()
 

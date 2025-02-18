@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/mattn/anko/ast"
-	"github.com/mattn/anko/env"
-	"github.com/mattn/anko/parser"
+	"github.com/blazium-engine/anko/ast"
+	"github.com/blazium-engine/anko/env"
+	"github.com/blazium-engine/anko/parser"
 )
 
 // Execute parses script and executes in the specified environment.

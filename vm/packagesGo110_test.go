@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 package vm
@@ -5,7 +6,7 @@ package vm
 import (
 	"testing"
 
-	_ "github.com/mattn/anko/packages"
+	_ "github.com/blazium-engine/anko/packages"
 )
 
 func TestPackagesStringsGo110(t *testing.T) {

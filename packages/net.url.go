@@ -1,3 +1,4 @@
+//go:build !appengine
 // +build !appengine
 
 package packages
@@ -6,7 +7,7 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/env"
 )
 
 func init() {

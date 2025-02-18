@@ -1,3 +1,4 @@
+//go:build !appengine
 // +build !appengine
 
 package astutil
@@ -6,7 +7,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/mattn/anko/ast"
+	"github.com/blazium-engine/anko/ast"
 )
 
 // WalkFunc is used in Walk to walk the AST

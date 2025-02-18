@@ -1,3 +1,4 @@
+//go:build go1.7
 // +build go1.7
 
 package packages
@@ -6,7 +7,7 @@ import (
 	"bytes"
 	"reflect"
 
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/env"
 )
 
 func bytesGo17() {

@@ -1,3 +1,4 @@
+//go:build go1.8
 // +build go1.8
 
 package packages
@@ -6,7 +7,7 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/mattn/anko/env"
+	"github.com/blazium-engine/anko/env"
 )
 
 func sortGo18() {
